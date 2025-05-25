@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Song that defines you</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Press Start 2P', cursive;
+      background-color: #0d0d0d;
+      overflow: hidden;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      color: #fff0f5;
+      text-align: center;
+    }
+
+    .lyrics-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 300vh; 
+      color: rgba(255, 255, 255, 0.05);
+      font-size: 8px;
+      line-height: 1.4;
+      white-space: pre-wrap;
+      padding: 20px 40px;
+      user-select: none;
+      pointer-events: none;
+      z-index: 0;
+      overflow-wrap: break-word;
+
+      animation: none;
+    }
+
+
+    #lyricsBox {
+      position: fixed;
+      bottom: 60px;
+      right: 20px;
+      width: 300px;
+      max-height: 300px;
+      overflow-y: auto;
+      background: rgba(30, 0, 30, 0.9);
+      border: 3px solid #ff69b4;
+      border-radius: 8px;
+      padding: 15px;
+      font-size: 10px;
+      color: #ffc1e3;
+      text-align: left;
+      white-space: pre-wrap;
+      font-family: 'Press Start 2P', cursive;
+      display: none;
+      z-index: 10;
+      box-shadow: 0 0 15px #ff69b4;
+    }
+
+    #lyricsBox::-webkit-scrollbar {
+      width: 6px;
+    }
+    #lyricsBox::-webkit-scrollbar-thumb {
+      background-color: #ff69b4;
+      border-radius: 3px;
+    }
+
+    .rain {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .raindrop {
+      position: absolute;
+      width: 2px;
+      height: 15px;
+      background: rgba(255, 255, 255, 0.3);
+      animation: fall linear infinite;
+    }
+
+    @keyframes fall {
+      to {
+        transform: translateY(100vh);
+      }
+    }
+
+    .photo-container {
+      position: relative;
+      z-index: 2;
+      border: 5px solid #ffb6c1;
+      padding: 15px;
+      background-color: #1a1a1a;
+      box-shadow: 0 0 25px #ff69b4;
+      margin-bottom: 20px;
+    }
+
+    .photo-container img {
+      max-width: 300px;
+      border-radius: 5px;
+    }
+
+    .volume-control {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 3;
+    }
+
+    input[type="range"] {
+      -webkit-appearance: none;
+      width: 100px;
+      height: 4px;
+      background: #ffb6c1;
+      outline: none;
+      border-radius: 5px;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 12px;
+      height: 12px;
+      background: #ff69b4;
+      cursor: pointer;
+      border-radius: 50%;
+    }
+
+    .message {
+      position: relative;
+      z-index: 2;
+      margin-bottom: 20px;
+      color: #ffc1e3;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    .play-btn {
+      background-color: #ff69b4;
+      color: white;
+      border: 3px solid #fff;
+      padding: 10px 20px;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 12px;
+      cursor: pointer;
+      z-index: 2;
+      position: relative;
+      text-shadow: 1px 1px #000;
+      transition: transform 0.1s ease;
+      user-select: none;
+    }
+
+    .play-btn:hover {
+      background-color: #ff85c1;
+      transform: scale(1.05);
+    }
+
+    #lyricsToggle {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 5;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      outline: none;
+      user-select: none;
+      filter: drop-shadow(0 0 2px #ff69b4);
+      transition: transform 0.1s ease;
+      width: 40px;
+      height: 40px;
+    }
+
+    #lyricsToggle:hover {
+      transform: scale(1.1);
+    }
+
+    #lyricsToggle img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="lyrics-bg"></div>
+  <div id="lyricsBox">
+Baby I'm falling Head over heels
+Looking for ways to let you know just how I feel
+Wish I was holding You by my side
+I wouldn't change a thing cause finally it's real
+Tryna hold back You oughta know that
+You're the one that's on my mind
+I'm falling too fast Deeply in love
+Finding the magic in the colors of you
+You're the right time at the right moment
+You're the sunlight keeps my heart going
+know when I'm with you Can't keep myself from falling
+right time at the right moment
+It's you
+you, it's you
+you, it's you
+Baby I'm falling Deeper in love
+Everything that you are is all I'm dreaming of
+And if I can break enough to show you that I need us
+I'd give up everything I have girl just for you
+Tryna hold back You oughta know that
+You're the one that's on my mind
+I'm falling too fast Deeply in love
+Girl all I need to breathe is you
+Cause you're the right time at the right moment
+you're the sunlight keeps my heart going
+know when i'm with you Can't keep myself from falling
+right time at the right moment
+it's you
+Every night in my bed I'm dreaming
+That it's you in my arms I'm holding
+Girl all I want is you
+you know you're the right time
+at the right moment
+you're the sunlight keeps my heart going
+It's you
+Cause You're the right time at the right moment
+You're the sunlight keeps my heart going
+know when I'm with you Can't keep myself from falling
+right time at the right moment
+It's you
+you, it's you
+you, it's you
+you, it's you
+you, it's you
+  </div>
+
+  <audio id="bgm" loop>
+    <source src="Its You.ogg" type="audio/mp3" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="volume-control">
+    <input type="range" id="volumeSlider" min="0" max="1" step="0.01" value="0.5" />
+  </div>
+
+  <div class="message">Let's listen to this music together</div>
+
+  <button class="play-btn" id="playBtn">▶ Play Music</button>
+
+  <div class="photo-container">
+    <img src="123.jpg" alt="Rainy You" />
+  </div>
+
+  <div class="rain" id="rain"></div>
+
+  <button id="lyricsToggle" title="Show/Hide Lyrics">
+    <img src="envelope.png" alt="Show Lyrics" />
+  </button>
+
+  <script>
+    const audio = document.getElementById("bgm");
+    const slider = document.getElementById("volumeSlider");
+    const playBtn = document.getElementById("playBtn");
+    const lyricsToggle = document.getElementById("lyricsToggle");
+    const lyricsBox = document.getElementById("lyricsBox");
+
+    slider.addEventListener("input", (e) => {
+      audio.volume = e.target.value;
+    });
+
+    playBtn.addEventListener("click", () => {
+      if (audio.paused) {
+        audio.play();
+        playBtn.textContent = "⏸ Pause Music";
+      } else {
+        audio.pause();
+        playBtn.textContent = "▶ Play Music";
+      }
+    });
+
+    lyricsToggle.addEventListener("click", () => {
+      if (lyricsBox.style.display === "none" || lyricsBox.style.display === "") {
+        lyricsBox.style.display = "block";
+      } else {
+        lyricsBox.style.display = "none";
+      }
+    });
+
+    const rainContainer = document.getElementById("rain");
+    const createRainDrop = () => {
+      const drop = document.createElement("div");
+      drop.classList.add("raindrop");
+      drop.style.left = Math.random() * window.innerWidth + "px";
+      drop.style.animationDuration = 0.5 + Math.random() * 0.5 + "s";
+      drop.style.opacity = 0.2 + Math.random() * 0.3;
+      rainContainer.appendChild(drop);
+      setTimeout(() => {
+        drop.remove();
+      }, 1000);
+    };
+
+    setInterval(createRainDrop, 20);
+  </script>
+  <button class="play-btn" onclick="window.location.href='photo.html'" style="margin-top: 20px; margin-bottom: 10px;">Back</button>
+
+  <button class="play-btn" onclick="window.location.href='final.html'" style="margin-top: 10px;">Next</button>
+
+</body>
+</html>

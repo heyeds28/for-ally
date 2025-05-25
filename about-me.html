@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        body {
+            background: linear-gradient(to bottom, #ff99cc, #cc66ff);
+            font-family: 'Press Start 2P', cursive;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            text-shadow: 3px 3px #ff6699;
+        }
+
+        .text-box {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #cc33a0;
+            padding: 15px;
+            font-size: 20px;
+            font-family: 'Press Start 2P', cursive;
+            border-radius: 10px;
+            width: 60%;
+            margin: 10px auto;
+            box-shadow: 0 0 10px #ff66b2;
+            text-align: left;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .text-box::before {
+            content: '→'; 
+            font-size: 30px;
+            margin-right: 10px; 
+        }
+
+        .button-container {
+            margin-top: 30px;
+        }
+
+        .next-page-button, .back-button {
+            background-color: #ff66b2;
+            border: 2px solid white;
+            color: white;
+            padding: 15px 30px;
+            font-size: 20px;
+            font-family: 'Press Start 2P', cursive;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+        }
+
+        .next-page-button:hover, .back-button:hover {
+            background-color: #cc33a0;
+        }
+    </style>
+</head>
+<body>
+    <h1>About Me</h1>
+
+    <div class="text-box">
+        <span>I'm an introverted nerd, weird, cryptic, but romantic guy who loves exploring new technologies and building cool stuff.</span>
+    </div>
+
+    <div class="text-box">
+        <span>In my free time, I enjoy playing video games, especially League of Legends, Valorant, and some RPG Games.</span>
+    </div>
+
+    <div class="text-box">
+        <span>I studied Information Technology and Master in Computer Science.</span>
+    </div>
+
+    <div class="text-box">
+        <span>I'm a former Chief Software Engineer in SAP Luxembourg. I also teach BS Computer Science at De La Salle University - Dasmarinas and Cavite State University as my part-time.</span>
+    </div>
+
+    <div class="text-box">
+        <span>I also write music. I can play Guitar, Piano, Drums, Saxophone, Flute, Clarinet, etc. Because I used to teach these instruments in Orchestra.</span>
+    </div>
+
+    <div class="button-container">
+        <a href="photo.html" class="next-page-button">Next</a>
+    </div>
+
+   
+    <div class="back-button-container">
+        <a href="about.html" class="next-page-button">Back</a>
+    </div>
+
+</body>
+</html>

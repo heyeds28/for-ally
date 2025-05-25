@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hi Ally!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      font-family: 'Press Start 2P', cursive;
+      color: #ff66cc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 14px;
+      margin-bottom: 40px;
+      animation: blink 1.2s infinite;
+    }
+
+    .start-button {
+      background-color: #000;
+      border: 3px solid #ff66cc;
+      color: #ff66cc;
+      padding: 15px 30px;
+      font-size: 12px;
+      cursor: pointer;
+      transition: 0.3s;
+      text-transform: uppercase;
+      box-shadow: 0 0 10px #ff66cc;
+    }
+
+    .start-button:hover {
+      background-color: #ff66cc;
+      color: #000;
+      box-shadow: 0 0 20px #ff66cc;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.6; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Hi Ally! Shooting my shot</h1>
+  <button class="start-button" onclick="location.href='about.html'">Start</button>
+</body>
+</html>
